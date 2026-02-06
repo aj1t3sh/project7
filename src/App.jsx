@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import bg from "./assets/sun.jpg";
 import './App.css';
 
 const API_KEY = "e9d62d5c8499be51afb6c53dc74d7dd8";
@@ -34,6 +35,10 @@ export default function App() {
   };
 
   return (
+    <div className="page"
+    style={{
+      backgroundImage: `url(${bg})`,
+    }}>
     <div className="app">
       <div className="header">
         <h1>Weather App 🌤️</h1>
@@ -66,6 +71,7 @@ export default function App() {
       <div className="footer">
         <p>© Copyright - Ajitesh</p>
       </div>
+    </div>
     </div>
   );
 }

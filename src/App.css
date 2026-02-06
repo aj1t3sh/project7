@@ -1,4 +1,4 @@
-/* ---------- Base ---------- */
+
 *{
   margin:0;
   padding:0;
@@ -11,12 +11,8 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  background: url(sun.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
-/* ---------- Main Card ---------- */
 .app{
   width:420px;
   padding:36px 34px;
@@ -28,7 +24,6 @@ body{
   color:#fff;
 }
 
-/* ---------- Header ---------- */
 .header h1{
   margin-bottom:25px;
   font-size:34px;
@@ -36,7 +31,6 @@ body{
   letter-spacing:.5px;
 }
 
-/* ---------- Search ---------- */
 .search{
   display:flex;
   gap:14px;
@@ -79,7 +73,6 @@ body{
   box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* ---------- Weather Card ---------- */
 .weather{
   margin-top:10px;
   padding:28px 24px;
@@ -94,7 +87,6 @@ body{
   animation:fade .5s ease;
 }
 
-/* City Name */
 .weather h2{
   font-size:26px;
   font-weight:700;
@@ -102,7 +94,6 @@ body{
   margin-bottom:4px;
 }
 
-/* Temperature (Hero element) */
 .weather p:first-of-type{
   font-size:36px;
   font-weight:700;
@@ -112,7 +103,6 @@ body{
   margin-bottom:8px;
 }
 
-/* Detail Rows */
 .weather p{
   display:flex;
   justify-content:space-between;
@@ -127,14 +117,12 @@ body{
   border-bottom:none;
 }
 
-/* ---------- Error ---------- */
 .error{
   color:#ffd6d6;
   font-weight:600;
   margin-top:10px;
 }
 
-/* ---------- Footer ---------- */
 .footer{
   margin-top:26px;
   font-size:14px;
@@ -142,8 +130,29 @@ body{
   color:#111;
 }
 
-/* ---------- Animation ---------- */
 @keyframes fade{
   from{opacity:0; transform:translateY(20px);}
   to{opacity:1; transform:translateY(0);}
+}
+
+.page{
+  position:fixed;
+  inset:0;           
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.app{
+  width:350px;
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.25);
+  box-shadow:0 8px 25px rgba(0,0,0,0.2);
+  text-align:center;
 }
