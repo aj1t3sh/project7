@@ -1,0 +1,149 @@
+/* ---------- Base ---------- */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: url(sun.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------- Main Card ---------- */
+.app{
+  width:420px;
+  padding:36px 34px;
+  border-radius:26px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(18px);
+  box-shadow:0 20px 55px rgba(0,0,0,0.28);
+  text-align:center;
+  color:#fff;
+}
+
+/* ---------- Header ---------- */
+.header h1{
+  margin-bottom:25px;
+  font-size:34px;
+  font-weight:600;
+  letter-spacing:.5px;
+}
+
+/* ---------- Search ---------- */
+.search{
+  display:flex;
+  gap:14px;
+  margin-bottom:28px;
+}
+
+.search input{
+  flex:1;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  outline:none;
+  background:#ffffffea;
+  color:#111;
+  font-size:16px;
+  transition:.25s;
+}
+
+.search input:focus{
+  box-shadow:0 0 0 3px rgba(255,255,255,0.5);
+}
+
+.search input::placeholder{
+  color:#6b6b6b;
+}
+
+.search button{
+  padding:14px 18px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(45deg,#ff9966,#ff5e62);
+  color:#111;
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.search button:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ---------- Weather Card ---------- */
+.weather{
+  margin-top:10px;
+  padding:28px 24px;
+  border-radius:22px;
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(12px);
+
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+
+  animation:fade .5s ease;
+}
+
+/* City Name */
+.weather h2{
+  font-size:26px;
+  font-weight:700;
+  color:#111;
+  margin-bottom:4px;
+}
+
+/* Temperature (Hero element) */
+.weather p:first-of-type{
+  font-size:36px;
+  font-weight:700;
+  color:#111;
+  justify-content:center;
+  border:none;
+  margin-bottom:8px;
+}
+
+/* Detail Rows */
+.weather p{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:16px;
+  color:#111;
+  padding:8px 4px;
+  border-bottom:1px solid rgba(0,0,0,0.12);
+}
+
+.weather p:last-child{
+  border-bottom:none;
+}
+
+/* ---------- Error ---------- */
+.error{
+  color:#ffd6d6;
+  font-weight:600;
+  margin-top:10px;
+}
+
+/* ---------- Footer ---------- */
+.footer{
+  margin-top:26px;
+  font-size:14px;
+  opacity:.8;
+  color:#111;
+}
+
+/* ---------- Animation ---------- */
+@keyframes fade{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
